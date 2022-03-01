@@ -6,3 +6,4 @@ It consist of the following folders:
 - app
 - assets
 - docs
+- issue
