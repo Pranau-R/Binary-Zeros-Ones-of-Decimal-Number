@@ -7,3 +7,4 @@ It consist of the following folders:
 - assets
 - docs
 - issue
+- src
