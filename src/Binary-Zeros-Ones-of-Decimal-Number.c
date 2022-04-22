@@ -1,25 +1,23 @@
 /*
-
 Module: Binary-Zeros-Ones-of-Decimal-Number.c
 
 Function:
-    Finding Binary zeros and Ones in a given decimal  number.
+        Finding Binary zeros and Ones in a given decimal  number.
 
 Copyright notice:
-    This file copyright (C) 2022 by
+        This file copyright (C) 2022 by
 
-    MCCI Corporation
-    3520 Krums Corners Road
-    Ithaca, NY 14850
+        MCCI Corporation
+        3520 Krums Corners Road
+        Ithaca, NY 14850
 
-    An unpublished work. All rights reserved.
+        An unpublished work. All rights reserved.
 
-    This file is proprietary information, and may not be disclosed or
-    copied without the prior permission of MCCI Corporation.
+        This file is proprietary information, and may not be disclosed or
+        copied without the prior permission of MCCI Corporation.
 
 Author:
-    Pranau R, MCCI Corporation   March 2022
-
+        Pranau R, MCCI Corporation   March 2022
 */
 
 #include<stdio.h>
@@ -32,15 +30,26 @@ Author:
 
 int main()
     {
+    int ch;
+
+    printf("\n");
+    printf("--------------------------------------------------------------------------------\n");
+    printf("This is binary_zeroes_and_ones_of_decimal_numbers v1.0.0\n");
+    printf("--------------------------------------------------------------------------------\n");
+    printf("\n");
+    printf("It is used to find the number of binary zeroes and ones\n");
+    printf("in a given decimal number.\n\n");
+
     int num, nOne, nZero, bit;
     nOne = 0;
     nZero = 0;
 
     // Getting decimal input and printing it's Binary output.
-    printf("Enter a Decimal Number: ");
+    printf("\nEnter a Decimal Number: ");
     scanf("%d", &num);
 
-    printf("The Binary value of your number is: ");
+    printf("\n\n----------------------------------------------------------\n");
+    printf("\nThe Binary value of your number is: ");
 
     // Loop condition to print Binary Value.
     for (bit = 31; bit >= 0; --bit)
@@ -72,8 +81,11 @@ int main()
         }
 
     // Printing number of ones and zeros
-    printf("The number of Ones is: %d\n", nOne);
+    printf("\nThe number of Ones is: %d\n", nOne);
     printf("The number of zeros is: %d\n", nZero);
+
+    printf("\n\nPress any key to close the program!...\n");
+    getch();
 
     return 0;
     }

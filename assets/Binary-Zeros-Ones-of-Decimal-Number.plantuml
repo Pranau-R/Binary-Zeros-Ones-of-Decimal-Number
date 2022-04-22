@@ -2,25 +2,20 @@
 
 start
 
-:Declare 3 integers for example: num, one, zero;
-:get input from user and store it in num;
-:Set the value for one and zero as '0'
-         i.e. one = 0 and zero = 0;
-:Now print the Binary value for the number entered by user
- so that we can verify the number of 1's and 0's in terminal;
-while (While num is greater than 0) is (yes)
-    if (if the present bit of num is a set\n            i.e. num & 1 == 1) then (yes)
-    :increment variable one
-                 i.e one++;
+:Declare 3 variables to store one input and two output;
+:Get input from user and store it in input variable;
+:Initialize the number of ones and zeroes as '0' in other two output variables.;
+:Now display the Binary value for the number entered by user
+ so that user can verify the number of 1's and 0's in terminal;
+while (when input number is greater than 0) is (yes)
+    if (is the present bit of input number a set\n            i.e. input number & 1 == 1) then (yes)
+    :increment the variable for 1;
     else (no)
-    :increment variable zero
-                 i.e. zero++;
+    :increment variable for 0;
     endif
-:right shift the present bit by 1
-                i.e. num >> 1;
+:right shift the present bit of input number by 1;
 endwhile (no)
-:When the while loop condition is false
-     Print the values of one and zero;
+:Dsiplay the number of 1's and 0's;
 
 stop
 

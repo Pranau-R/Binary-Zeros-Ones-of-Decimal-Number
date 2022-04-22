@@ -1,0 +1,50 @@
+Plantuml code:
+
+@startuml
+
+start
+
+:Declare int num, one, zero;
+:Set one = 0, zero = 0;
+repeat :While num>0;
+    if (num & 1 == 1) then (yes)
+    :one++;
+    else (no)
+    :zero++;
+    endif
+repeat while (num>>1)
+-[hidden]->
+break;
+
+:While num<=0;
+:Print one and zero;
+
+stop
+
+@enduml
+
+Fix Plantuml Code:
+
+@startuml
+
+start
+
+:Declare int num, one, zero;
+:Set one = 0, zero = 0;
+while (While num > 0) is (yes)
+    if (num & 1 == 1) then (yes)
+    :one++;
+    else (no)
+    :zero++;
+    endif
+:num>>1;
+endwhile (no)
+:Print one and zero;
+
+stop
+
+@enduml
+
+Conclusion:
+
+Instead of using repeat while loop, we used while loop to fix this issue.
